@@ -32,8 +32,9 @@ function App() {
     <ChakraProvider>
       <AuthContext.Provider value={{accessToken: accessToken, setAccessToken}}>
       <div className="App">
-        {accessToken.length > 1 ? <Header/> : null}
-          {accessToken.length > 1 ? authRoute : route}
+        {/*{accessToken.length > 1 ? <Header/> : null}*/}
+        {/*  {accessToken.length > 1 ? authRoute : route}*/}
+        {authRoute}
       </div>
       </AuthContext.Provider>
     </ChakraProvider>
